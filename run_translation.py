@@ -17,8 +17,8 @@
 Fine-tuning the library models for sequence to sequence.
 """
 # You can also adapt this script on your own sequence to sequence task. Pointers for this are left as comments.
-# This script is directly copied
-# from https://github.com/huggingface/transformers/blob/b8fad022a048369bdbe73ef3a7a94540fcdeb1ce/examples/pytorch/translation/run_translation.py
+# This script is directly copied from:
+# https://github.com/huggingface/transformers/blob/b8fad022a048369bdbe73ef3a7a94540fcdeb1ce/examples/pytorch/translation/run_translation.py
 
 import logging
 import os
