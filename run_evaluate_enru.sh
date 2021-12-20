@@ -1,7 +1,7 @@
 #!/bin/bash
 
 model_name='DeepPavlov/marianmt-tatoeba-enru'
-output_dir="output"
+output_dir="output_enru"
 validation_file="data/test.json"
 
 
