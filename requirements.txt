@@ -1,4 +1,4 @@
-transformers == 4.13.0.dev0
+git+https://github.com/huggingface/transformers.git@b8fad022a048369bdbe73ef3a7a94540fcdeb1ce
 accelerate
 datasets >= 1.8.0
 sentencepiece != 0.1.92
