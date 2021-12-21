@@ -1,6 +1,6 @@
 import argparse
 
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer, AutoConfig
 
 BASE_ENRU_NAME = "Helsinki-NLP/opus-mt-en-ru"
 BASE_RUEN_NAME = "Helsinki-NLP/opus-mt-ru-en"
@@ -9,7 +9,8 @@ BASE_ENRU_DIR = "./base_enru"
 BASE_RUEN_DIR = "./base_ruen"
 
 def create_base_model(name: str, directory: str) -> None:
-    model = AutoModelForSeq2SeqLM.from_pretrained(name)
+    config = AutoConfig.from_pretrained(name)
+    model = AutoModelForSeq2SeqLM.from_config(config=config)
     tokenizer = AutoTokenizer.from_pretrained(name)
     model.save_pretrained(save_directory=directory)
     tokenizer.save_pretrained(save_directory=directory)
