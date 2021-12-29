@@ -8,7 +8,7 @@ from tqdm.auto import tqdm
 DEFAULT_ENRU_MODEL = "DeepPavlov/marianmt-tatoeba-enru"
 DEFAULT_RUEN_MODEL = "DeepPavlov/marianmt-tatoeba-ruen"
 DEFAULT_BATCH_SIZE = 32
-DEFAULT_NUM_RETURN_SEQUNCES = 1
+DEFAULT_NUM_RETURN_SEQUENCES = 1
 DEFAULT_NUM_BEAMS = 3
 DEFAULT_OUTPUT = "generated_translations.txt"
 
@@ -62,7 +62,7 @@ parser.add_argument("--sentences_path", type=str, required=True)
 parser.add_argument("--direction", type=str, required=True)
 parser.add_argument("--model", type=str)
 parser.add_argument("--output_file", type=str, default=DEFAULT_OUTPUT)
-parser.add_argument("--num_return_sequences", type=int, default=DEFAULT_NUM_RETURN_SEQUNCES)
+parser.add_argument("--num_return_sequences", type=int, default=DEFAULT_NUM_RETURN_SEQUENCES)
 parser.add_argument("--num_beams", type=int, default=DEFAULT_NUM_BEAMS)
 parser.add_argument("--batch_size", type=int, default=DEFAULT_BATCH_SIZE)
 
