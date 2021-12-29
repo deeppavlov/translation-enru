@@ -32,7 +32,7 @@ if ! [[ "$base_model_dir" = /* ]]; then
 fi
 
 
-python examples/pytorch/translation/run_translation.py \
+python run_translation.py \
     --model_name_or_path $base_model_dir \
     --do_train \
     --do_eval \
