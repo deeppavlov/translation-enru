@@ -39,12 +39,14 @@ def write_beam_translations(path, hypotheses):
         for beam in hypotheses:
             file.write("\t".join(beam) +  "\n")
 
-            
+
 def read_sentences(path):
     sentences = []
     with open(path) as file:
         for line in file:
-            sentences.append(line.strip("\n"))
+            sentence = line.strip("\n")
+            if sentence:
+                sentences.append(sentence)
     return sentences
 
 
