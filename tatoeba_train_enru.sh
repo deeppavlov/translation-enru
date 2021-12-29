@@ -33,7 +33,7 @@ fi
 
 
 python examples/pytorch/translation/run_translation.py \
-    --model_name_or_path $model_name \
+    --model_name_or_path $base_model_dir \
     --do_train \
     --do_eval \
     --source_lang en \
